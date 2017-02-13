@@ -1,0 +1,50 @@
+/*
+MULTIPLICACIÓN DE DOS NUMEROS SIN SIGNO
+ESTUDIANTE: Jose Feiver Angarita Monsalve
+CODIGO: 1088261030
+ASIGNATURA: Arquitectura de Computadores
+
+ */
+package arquit;
+
+import java.util.Scanner;
+
+public class Arquit {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        Scanner ingreso=new Scanner(System.in); 
+        
+        int num1,num2,res,x,produc; 
+        
+        System.out.println("Ingrese Multiplicando: "); 
+        num1=Integer.parseInt(ingreso.next()); 
+        
+        if (num1>=0){
+        }else {
+            System.out.println("El Numero " + num1 + " No es Positivo");
+            return;
+        }
+        
+        System.out.println("Ingrese Multiplicador: "); 
+        num2=Integer.parseInt(ingreso.next()); 
+        if (num2>=0){
+        }else {
+            System.out.println("El Numero " + num2 + " No es Positivo");
+            return;
+        }
+        
+            produc=num2; 
+            for (x=1;x<num1;x++){ 
+            res=produc+num2; 
+            
+            produc=res; 
+            }
+
+            System.out.println("Producto = " + produc);
+    }
+}
