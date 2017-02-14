@@ -1,0 +1,33 @@
+
+MULTIPLICACIÓN DE DOS NUMEROS SIN SIGNO
+ESTUDIANTE Jose Feiver Angarita Monsalve
+CODIGO 1088261030
+ASIGNATURA Arquitectura de Computadores
+ 
+package arquit;
+
+import java.util.Scanner;
+
+public class division {
+
+    
+    public static void main(String[] args) {
+        Scanner ingreso=new Scanner(System.in); 
+        int num1, num2, coc, rest, contador=0, divid, divis;
+        System.out.println(Ingrese Dividendo ); 
+        divid=Integer.parseInt(ingreso.next()); 
+        
+        System.out.println(Ingrese Divisor ); 
+        divis=Integer.parseInt(ingreso.next());
+        
+        divid = divid - divis;
+        
+        while (divid = 0){
+            contador = contador + 1;
+            divid = divid - divis;
+        }
+        
+        System.out.println(El cociente es  + contador);
+        
+    }
+}
