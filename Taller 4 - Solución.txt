@@ -23,7 +23,7 @@ ASIGNATURA: Arquitectura de Computadores
 11001110100110110100
 
 0000000000001100111010|0010001011
-22Cifras = 826		  | 22Cifras = 139
+22Cifras = 826        | 10Cifras = 139
 
 
 * 4.150.000
@@ -31,7 +31,7 @@ ASIGNATURA: Arquitectura de Computadores
 1111110101001011110000
 
 0000000000111111010100|1011110000
-22Cifras = 4.052	  | 22Cifras = 752
+22Cifras = 4.052      | 10Cifras = 752
 
 
 * 4.587.956
@@ -39,7 +39,7 @@ ASIGNATURA: Arquitectura de Computadores
 10001100000000110110100
 
 0000000001000110000000|0110110100
-22Cifras = 4.480	  | 22Cifras = 436
+22Cifras = 4.480      | 10Cifras = 436
 
 
 * 3.456.879
@@ -47,7 +47,7 @@ ASIGNATURA: Arquitectura de Computadores
 1101001011111101101111
 
 0000000000110100101111|1101101111
-22Cifras = 3.375	  | 22Cifras = 879
+22Cifras = 3.375      | 10Cifras = 879
 
 
 * 25.005.478
@@ -55,7 +55,7 @@ ASIGNATURA: Arquitectura de Computadores
 1011111011000110110100110
 
 0000000101111101100011|0110100110
-22Cifras = 24.419	  |22Cifras = 422
+22Cifras = 24.419     | 10Cifras = 422
 
 
 - PASO 2 - Asignar un registro a cada variable
@@ -71,42 +71,42 @@ z= %l1
 
 					TEST
 
-0x0000    ADD    %i0    %i1    %00      (1.)
-0x0004    JMPL   %o7    8      %g0      (2.)
-0x0008    SUB    %O0    %i2    %00      (3.) 
+0x0000    ADD    %i0    %i1    %00      		(1.)
+0x0004    JMPL   %o7    8      %g0      		(2.)
+0x0008    SUB    %O0    %i2    %00      		(3.) 
 
 
 
 					MAIN
 
-0x000c    SETHI    -4.191.474   %i0					(4.)
-0x0010    OR       %i0          505			%i0     (5.)
-0x0014    MOV      345  	 	%i1              	(6.) 
-0x0018    MOV      0            %i2                 (7.) 
-0x001c    SETHI    826          %l0                 (8.)
+0x000c    SETHI    -4.191.474   %i0			(4.)
+0x0010    OR       %i0          505		%i0     (5.)
+0x0014    MOV      345  	 	%i1             (6.) 
+0x0018    MOV      0            %i2             	(7.) 
+0x001c    SETHI    826          %l0                 	(8.)
 0x0020    OR       %l0          139        	%l0     (9.)
-0x0024    SETHI    4.052        %l2                 (10.)
+0x0024    SETHI    4.052        %l2                 	(10.)
 0x0028    OR       %l2          752        	%l2     (11.)
 0x002c    SUB      %l2          %l0        	%l2     (12.)
 0x0030    SUB      %i0          %i1        	%l0     (13.)
 0x0034    ADD      %l0          %i2        	%l0     (14.)
-0x0038    SETHI    4.480        %l3                 (15.)
+0x0038    SETHI    4.480        %l3                	(15.)
 0x003c    OR       %l3          436        	%l3     (16.)
-0x0040    CMP      %l0          %l3                 (17.) 
-0x0044    BNE      a            ELSE                (18.) 
-0x0048    SETHI    3.375        %l4                 (19.)
+0x0040    CMP      %l0          %l3                 	(17.) 
+0x0044    BNE      a            ELSE                	(18.) 
+0x0048    SETHI    3.375        %l4                 	(19.)
 0x004c    OR       %l4          879        	%l4     (20.)
 0x0050    SUB      %l0          %l4        	%i2     (21.)
-0x0054    BA       a            RETURN              (22.)
+0x0054    BA       a            RETURN              	(22.)
 	ELSE
-0x0058    SETHI    24.419       %l5					(23.)
+0x0058    SETHI    24.419       %l5			(23.)
 0x005c    OR       %l5          422        	%l5     (24.)
 0x0060    ADD      %l5          %l0        	%l1     (25.)
 	RETURN                                               
 0x0064    ADD      %l0          2.564      	%l0     (26.)
 0x0068    SUB      %l0          %l1        	%l0     (27.)
-0x006c    CALL TEST                                 (28.)
-0x0070    NOP                                       (29.)
+0x006c    CALL TEST                                 	(28.)
+0x0070    NOP                                       	(29.)
 0x0074    ADD      %l0          %O0        	%O0     (30.)
                                   
                            
