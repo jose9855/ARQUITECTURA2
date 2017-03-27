@@ -1,0 +1,2 @@
+vhdl work "FFD_Module.vhd"
+vhdl work "TB_FFD.vhd"

@@ -1,0 +1,29 @@
+Command line:
+   TestB_FFDModule_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50748
+
+Sun Mar 26 22:31:38 2017
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 843.579 Meg
+
+ Total Signals          : 8
+ Total Nets             : 4
+ Total Signal Drivers   : 1
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 2
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 365
+Total Line Count : 5
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 686.293 Meg
+
+Sun Mar 26 22:42:42 2017
+
